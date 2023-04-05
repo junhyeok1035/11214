@@ -1,4 +1,4 @@
-# 11214
+#1가위 #2바위 #보
 a=int(input())
 b=int(input())
 if a>b:

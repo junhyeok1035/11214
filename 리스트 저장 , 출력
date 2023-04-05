@@ -1,0 +1,8 @@
+#키가 170cm이상인 학생들을 리스트에 저장하고 리스트 출력
+
+student=[180,170,164,199,182,172,177]
+d=[]
+for i in student:
+  if i>=170:
+    d.append(i)
+print(d)

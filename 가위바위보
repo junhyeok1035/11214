@@ -1,0 +1,15 @@
+# 11214
+a=int(input())
+b=int(input())
+if a>b:
+   if a==3 and b==1:
+     print("b가이겼습니다")
+   else: 
+      print("a가이겼습니다")
+elif a<b:
+    if a==3 and b==1:
+      print("a가이겼습니다")
+    else:
+     print("b가이겼습니다")
+else:
+   print("무승부")    

@@ -9,9 +9,11 @@ public class Hello {
 	    //바로뜨지않는경우 - 여러개
 		System.out.print("안녕하세요");
 
-                System.out.println(3+5); //3+5의 결과를 출력하는문
-		System.out.println("3+5"); //3+5를 그대로 출력하는 문
-		System.out.println("3+5=8"); //3+5=8을 출력하는문
+               
+                //Alt + 방향키 줄바꿈
+		System.out.println(3+5); //3+5의 결과를 출력하는문
+		System.out.println("3+5"); //3+5를 그대로 출력하는문
+		System.out.println("3+5="+(3+5)); //3+5=8을 출력하는문
 	}
 
 }

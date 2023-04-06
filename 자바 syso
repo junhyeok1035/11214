@@ -1,0 +1,14 @@
+package jun17;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		System.out.println("안녕하세요"); 
+		//syso 입력 후 crtl + space 누르고 엔터
+	    //crtl + space 눌렀을때 바로뜨는경우 - 하나밖에 없어요 
+	    //바로뜨지않는경우 - 여러개
+		System.out.print("안녕하세요");
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package jun;
+
+public class jun {
+
+	public static void main(String[] args) {
+		//a라는 int 변수 선언하기
+		//b라는 int 변수 선언하기 
+		//a에 18저장, b에 99저장하기
+		//a와 b출력하기("a는 *이고 b는 *입니다.")
+		//("값을 바꿉니다~")출력하기
+		//a와b값 바꾸기
+		//a와 b출력하기("a는 *이고 b는 *입니다.")
+		
+	int a = 18;
+	int b = 99;
+    System.out.println("a는"+a+"이고 b는"+b+"입니다.");
+	System.out.println("값을 바꿉니다~");		
+	int c = a;	
+	a = b;	
+	b = c;
+	System.out.println("a는"+a+"이고 b는"+b+"입니다.");
+				
+		
+	}
+
+}

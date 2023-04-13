@@ -1,0 +1,15 @@
+package jun;
+
+public class Jun {
+
+	public static void main(String[] args) {
+		int 아무거나 = 18;
+		int 아무거나더하기일 = ++아무거나; // 전위 연산자 ++뜻 : 1 증가
+		System.out.println("++아무거나:"+아무거나더하기일);
+		
+		아무거나 = 18;
+		아무거나더하기일 = 아무거나++; // 후의 연산자 
+		System.out.println("아무거나++:"+아무거나더하기일);
+	}
+
+}

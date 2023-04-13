@@ -1,0 +1,21 @@
+package jun;
+
+public class Jun {
+
+	public static void main(String[] args) {
+		// 변수하나만들어서 삼항 연산자 활용 (조건식) ? 식1 : 식 2
+		//조건식 = 홀짝을 판별하는 식 (나머지 연산자 %)
+		//숫자%2==0 -> 짝수 //// 아니면 홀수
+		//홀인지 짝인지를 판단해서 출력하기
+		
+		int 숫자= 100;
+		String 결과 = "";
+		결과 =(숫자%2==0) ? "짝수" : "홀수";
+		System.out.println(숫자+":"+결과);
+		
+		
+		
+		
+	}
+
+}

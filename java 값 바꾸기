@@ -14,7 +14,7 @@ public class jun {
 	int a = 18;
 	int b = 99;
     System.out.println("a는"+a+"이고 b는"+b+"입니다.");
-	System.out.println("값을 바꿉니다~");		
+	System.out.println("값을 바꿉니다~");	
 	int c = a;	
 	a = b;	
 	b = c;

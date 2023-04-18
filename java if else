@@ -1,0 +1,22 @@
+package jun;
+
+import java.util.Scanner;
+
+public class jun {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	// 클래스       인스턴스
+		System.out.println("숫자 입력 ㄱㄱ");
+		int num = sc.nextInt();
+		System.out.println(num);
+		
+		if (num<18) //num이 18보다 작냐???
+			System.out.println("num이 18보다 작구만");
+		else 
+			System.out.println("num이 18보다 크거나 같구만");
+	
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package jun;
+
+import java.util.Scanner;
+
+public class jun {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	// 클래스       인스턴스
+		System.out.println("숫자 입력 ㄱㄱ");
+		int num = sc.nextInt();
+		System.out.println(num);
+		
+		
+		
+	}
+
+}

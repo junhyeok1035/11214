@@ -1,0 +1,20 @@
+package jun;
+
+import java.util.Scanner;
+
+public class jun {
+
+	public static void main(String[] args) {
+		//숫자 입력 받아서 홀인지 짝인지를 출력하는 조건문
+		//(나머지연산자(%)를 이용)
+	Scanner sc = new Scanner(System.in);	
+	System.out.println("숫자 입력 ㄱㄱㄱ");
+	int num = sc.nextInt();
+	
+	if (num%2==0)
+		System.out.println("짝수");
+	else
+		System.out.println("홀수");
+	}
+
+}

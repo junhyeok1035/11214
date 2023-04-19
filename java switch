@@ -1,0 +1,37 @@
+package jun;
+
+import java.util.Scanner;
+
+public class jun2 {
+
+	public static void main(String[] args) {
+		// 두 수를 입력 받아
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자 1 입력하세요.");
+		int 숫자1 = sc.nextInt();
+		
+		System.out.println("숫자 2 입력하세요.");
+		int 숫자2 = sc.nextInt();
+		
+		System.out.println("+,-,*,/ 중 하나를 입력해주세요");
+		String 연산자 = sc.next();
+		
+		switch(연산자) {
+		case "+" :
+			System.out.println(숫자1 + 숫자2);
+			break;
+		case "-" :
+			System.out.println(숫자1 - 숫자2);
+			break;
+		case "*" :
+			System.out.println(숫자1 * 숫자2);
+			break;
+		case "/" :
+			System.out.println(숫자1 / 숫자2);
+			break;
+		default:
+			System.out.println("+,-,*,/ 중에 하나만 입력해야지");
+		}
+	}
+
+}

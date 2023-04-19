@@ -1,0 +1,62 @@
+package jun;
+
+import java.util.Scanner;
+
+public class jun {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		//라면 끓이기프로젝트
+		System.out.println("라면을 끓여보자!~");
+		//물 끓이기
+		System.out.println("가스레인지 앞에 섰다.");
+		System.out.println("1.불을 킨다.     2.귀찮아.생라면 먹어야지");
+		int a = sc.nextInt();
+		
+		if (a==1) {
+			//불이 켜짐
+			System.out.println("가스레인지에 불이 켜진다");
+			//물이 끓면
+			System.out.println("물이 끓는다");
+			//스프,면을 넣는다
+			System.out.println("1.스프,면을 넣는다      2.귀찮다 그냥 편의점간다");
+			int b = sc.nextInt();
+			
+			if (b==1) {	
+				//2분 더 끓인다
+				System.out.println("면과 스프를 넣고 2분 더 끓였다");
+				//먹는다
+				System.out.println("맛있게먹자");
+			} else if(b==2) {
+				System.out.println("불을 끄고 편의점을 간다 빠이~!!~!~!~!");
+			} else {
+				System.out.println("1,2 중에 하나만 입력해야됩니다 빠이~!!~!~!");
+			}
+		}	
+		  else if(a==2) {
+			System.out.println("생라면 가즈아");
+		} else {
+			System.out.println("1,2 중에 하나만 입력해야됩니다 빠이~!!~!~!");
+		}
+	}
+
+}
+
+
+
+
+
+
+라면을 끓여보자!~
+가스레인지 앞에 섰다.
+1.불을 킨다.     2.귀찮아.생라면 먹어야지
+1
+가스레인지에 불이 켜진다
+물이 끓는다
+1.스프,면을 넣는다      2.귀찮다 그냥 편의점간다
+
+1
+면과 스프를 넣고 2분 더 끓였다
+맛있게먹자
+

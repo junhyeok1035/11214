@@ -1,0 +1,16 @@
+package jun;
+
+public class jun {
+
+	public static void main(String[] args) {
+		//1부터 10까지 출력하는 반복문
+		int a = 1;
+		while(a<=10) { //1 <=10 , 2<=10 ... 10<=10
+			//조건이 참이면 실행
+			System.out.println(a);  //1,2,10
+			a++;  //a==2 //a==3 //a==11
+		}
+		
+
+  }
+}

@@ -1,0 +1,22 @@
+package jun;
+
+public class jun2 {
+
+	public static void main(String[] args) {
+		
+		
+			for(int i=1; i<=5; i++) {
+				// i = 1, i=2
+				for(int j=1; j<=i;j++) {
+				// 1<=1; 2<=1(거짓)
+				// 1<=2; 2<=2; 3<=2(거짓)
+					System.out.print("*");
+					// *
+					// **
+				}
+				System.out.println();
+			}
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package jun;
+
+import java.util.Scanner;
+
+public class JUN {
+
+	public static void main(String[] args) {
+		//구구단만들기
+		Scanner sc = new Scanner(System.in);
+		System.out.println("몇단 할거야");
+		 
+		int 몇단 = sc.nextInt();
+		int 곱 = 1;
+		
+		while(곱<=9) {    //1~9  //System.out.printf("%d * %d = %d",몇단,곱,몇단*곱); < printf로하는법
+			System.out.println(몇단+" * "+곱+" = "+(몇단*곱));
+			곱++;
+		}
+		
+
+		
+	}
+
+}

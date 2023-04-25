@@ -1,0 +1,20 @@
+package jun;
+
+import java.util.Scanner;
+
+public class JUN {
+
+	public static void main(String[] args) {
+		//구구단만들기
+		Scanner sc = new Scanner(System.in);
+		System.out.println("몇단 할거야");
+		 
+		int 몇단 = sc.nextInt();
+		
+			
+		for(int 곱1 = 1; 곱1<=9; 곱1++) {
+			System.out.println(몇단+" * "+곱1+" = "+(몇단*곱1));
+		}
+	}
+
+}

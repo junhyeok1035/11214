@@ -1,0 +1,25 @@
+package jun;
+
+import java.util.Scanner;
+
+public class JUN {
+
+	public static void main(String[] args) {
+		//몇단 볼지 입력받아서
+		//몇까지 곱할지 입력받아서 출력하는 프로그램
+		Scanner scan = new Scanner(System.in);
+		System.out.println("몇단 볼래");
+		int 몇단 = scan.nextInt();
+		
+		System.out.println("몇까지 곱할래");
+		int 곱할수 = scan.nextInt();
+		
+		int i = 1;
+		while(i<곱할수) {  //조건 > i가 곱할수보다 작은동안
+			System.out.println(몇단+"*"+i+"="+(몇단*i));
+			i++;
+		}
+		
+	}
+
+}

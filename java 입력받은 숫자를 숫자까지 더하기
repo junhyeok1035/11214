@@ -1,0 +1,29 @@
+package jun;
+
+import java.util.Scanner;
+
+public class Jun1234 {
+
+	public static void main(String[] args) {
+		//숫자입력받아서 1부터 그 숫자까지 더하는 반복문(조건문)
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자 입력해봐"); 
+		int num = sc.nextInt();
+		int a = 0;
+		int b = 1;
+		
+		while(true) {
+			System.out.print("현재숫자 : "+b+"  ");
+			a = a + b;
+			System.out.println("현재합계:  "+a);
+			b++;
+			if(b>num) {
+				System.out.println("이제끝");
+				break;
+				}
+			
+		}
+		System.out.println(a);
+	}
+	
+}

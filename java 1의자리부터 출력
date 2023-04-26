@@ -1,0 +1,24 @@
+package jun;
+
+import java.util.Scanner;
+
+public class Jun {
+
+	public static void main(String[] args) {
+		//숫자 입력받아서 1의 자리부터 차례대로 출력하는 프로그램
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자 입력 ㄱㄱㄱ");
+		for(int num = sc.nextInt(); num>0; num/=10) {  // num이 0이 될때까지
+			System.out.println(num % 10);
+			
+		}
+			
+			
+		
+		
+		
+		
+		
+	}
+
+}

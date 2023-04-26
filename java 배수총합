@@ -1,0 +1,24 @@
+package jun;
+
+import java.util.Scanner;
+
+public class Jun1234 {
+
+	public static void main(String[] args) {
+		//1부터 입력한 정수 중에서 2또는 3의 배수가 아닌 수의 총합을 구하세요
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자입력");
+		int num = sc.nextInt();
+		int 결과 = 0;
+		
+		for(int i=1; i<=num; i++) {
+			if(i%2!=0 || i%3!=0) {
+				System.out.println("현재 i:"+i);
+				결과 = 결과 +  i;
+				System.out.println(결과);
+			}
+		}
+		
+	}
+	
+}

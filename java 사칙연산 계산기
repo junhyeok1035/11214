@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Jun {
+
+	public static void main(String[] args) {
+		//사칙연산 계산기 프로그램
+		//메뉴(1. 계산기 실행, 2. 종료)
+		//숫자 입력받고 무슨계산할지 선택 (1,2,3,4)
+		//계산 하고 계산 출력하고 메뉴로 돌아가기 
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+			System.out.println("----------------");
+			System.out.println("계산기 프로그램 입니다.");
+			System.out.print("(1)계산기 실행 (2)종료");
+			int a = sc.nextInt();
+			System.out.println("----------------");
+			System.out.println();
+			
+			if(a==1) {	//계산기 실행
+				System.out.println("계산기를 실행합니다.");
+				//두 수를 입력받기
+				System.out.println("num1 입력해봐");
+				int num1 = sc.nextInt();
+				System.out.println("num2입력해봐");
+				int num2 = sc.nextInt();
+				System.out.println("+, -, *, /  선택하세요");
+				String op = sc.next();
+				
+				switch (op) {
+				case "+":			  
+					System.out.println("결과는 "+(num1+num2));
+					break;
+				case "-":			  
+					System.out.println("결과는 "+(num1-num2));
+					break;
+				case "*":			  
+					System.out.println("결과는 "+(num1*num2));
+					break;
+				case "/":			  
+					System.out.println("결과는 "+(num1/num2));
+					break;
+				default:
+					System.out.println("연산자 다시 입력 ㄱㄱ");
+					
+				}
+				
+				
+				
+				
+				
+			}	else if(a==2) { //종료
+					System.out.println("계산기를 종료합니다.");
+					break;
+			}	else {
+				System.out.println("(1) 또는 (2)만 선택 하세요 돌아가");
+			}
+		}
+		
+		
+		
+		
+		
+	}
+
+}

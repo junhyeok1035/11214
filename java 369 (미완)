@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Jun {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int num = sc.nextInt();
+	int 박수 = 0;
+	
+	while(true) {
+		System.out.println(num);
+		if(num%10==3 || num%10==6 || num%10==9)
+	}
+	
+	
+	}
+
+}

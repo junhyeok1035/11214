@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Jun {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("start?: ");
+		int 시작 = sc.nextInt();
+		
+		System.out.println("last?: ");
+		int 마지막 = sc.nextInt();
+		
+		System.out.println("valie change?: ");
+		int 증가값 = sc.nextInt();
+		
+		int sum = 0;
+		
+		for(int i=시작; i<=마지막; i+=증가값) {
+			System.out.println("i: "+i);
+			sum = sum + i;
+		}
+		System.out.println(sum);
+	}
+
+}

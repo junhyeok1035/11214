@@ -1,0 +1,45 @@
+package jun;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class jun {
+
+	public static void main(String[] args) {
+		//숫자 야구 게임
+		Random rd = new Random();
+		
+		int 박 = rd.nextInt(9)+1;
+		int 준 = rd.nextInt(9)+1;
+		int 혁 = rd.nextInt(9)+1;
+		
+		while(박==준||혁==박||혁==준) {
+			박 = rd.nextInt(9)+1;
+			준 = rd.nextInt(9)+1;
+			혁 = rd.nextInt(9)+1;
+		}
+		//System.out.println(박);
+		//System.out.println(준);
+		//System.out.println(혁);
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("숫자 3개 입력해라");
+		int jun = sc.nextInt();
+		if(jun<999) {
+			System.out.println("다시해");
+		} else {
+			int n = jun % 10;
+			jun = jun / 10;
+			int u = jun % 10;
+			jun = jun / 10;
+			int j = jun % 10;
+			int s = 0;
+			int b = 0;
+			if(박==j) s++;
+			if(준==u) s++;		
+			if(혁==n) s++;
+		}
+		
+	}
+
+}

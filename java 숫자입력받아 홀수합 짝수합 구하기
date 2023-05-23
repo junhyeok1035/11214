@@ -1,0 +1,29 @@
+package jun;
+
+import java.util.Scanner;
+
+public class jun {
+
+	public static void main(String[] args) {
+	//숫자를 입력받아서 홀수끼리의 합을 구하고 짝수끼리의 합을 구하는 프로그램
+		 Scanner sc = new Scanner(System.in);
+		 int evenSum = 0;
+		 int oddSum = 0;
+		 System.out.println("숫자 입력");
+		 int num = sc.nextInt();
+		 
+		 for(int i=1; i<=num; i++) {
+			  if(i%2==0) {
+				  evenSum += i;
+			  }	else if(i%2==1); {
+				   oddSum += i;
+			  }
+			 
+		 
+		 }
+		 System.out.println("짝수합: "+evenSum);
+		 System.out.println("홀수합: "+oddSum);
+	}
+	
+	
+}

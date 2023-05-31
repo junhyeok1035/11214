@@ -1,0 +1,16 @@
+import random
+rn = random.randrange(1,101,1)
+b=0
+while True:
+  a = int(input('숫자 입력:'))
+  if a > rn:
+    print("다운")
+    b = b + 1
+  elif a < rn:
+    print("업")
+    b = b + 1
+  elif a==rn:
+    print("맞췄다")
+    b = b + 1
+    break
+print(b,"번 만에 맞췄다.")

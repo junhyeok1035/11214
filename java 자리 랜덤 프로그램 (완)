@@ -1,0 +1,38 @@
+package jun;
+import java.util.Random;
+import java.util.Scanner;
+
+public class jun2 {
+	public static void main(String[] args) {
+		
+	Scanner sc = new Scanner(System.in);
+	Random rd = new Random();
+		
+	System.out.print("가로?");
+	int rows = sc.nextInt();
+	
+	System.out.print("세로?");
+	int cols = sc.nextInt();
+	
+	int[] 자리 = new int[rows*cols];
+	
+	for(int i=0; i<자리.length; i++) {
+		자리[i] = rd.nextInt(rows*cols)+1;
+		for(int j=0; j<i; j++) {
+			if(자리[i] == 자리[j])
+				i--;
+		}
+	}
+	
+	for(int i=0; i<자리.length; i++) {
+		System.out.print(자리[i]+" ");
+		if(i!=0 && i%cols==0)
+		System.out.println();
+	}
+	
+	
+	
+		
+	}
+
+}

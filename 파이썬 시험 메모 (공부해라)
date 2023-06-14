@@ -1,0 +1,22 @@
+#def - 함수 정의
+
+#파이썬 확장자 - .py
+
+#논리연산자 !=, and, or, <=not
+
+#abc = '1,2,3,4,5'
+#ddong = abc.split(',')
+#print(ddong)
+#print(ddong[2])
+
+# 출력결과 ['1', '2', '3', '4', '5']
+#3
+
+#num = int(input())
+#while num <= 10:
+# print(num)
+#  num = num +1
+
+a = int(input())  #a라는 변수에 정수값을 입력받는다.
+for k in range(1, a, 5):  #for문 아래 문장 'print(k)'을 반복한다.
+  print(k)  #범위는 1부터 a-1 까지, 5 간격으로 (1, 6, 11, ...)

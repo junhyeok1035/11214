@@ -1,0 +1,9 @@
+num = int(input("숫자입력"))
+
+if num > 3:
+  if num < 7:
+    print("7보다 작고나 같다")
+  else:
+    print("7보다 크거나 같다")
+else:
+   print("3보다 작거나 같다")

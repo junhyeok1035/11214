@@ -1,0 +1,19 @@
+#리스트에 1~10까지의 정수를 넣고 pop 연산 3회 실행 후 리스트 출력
+
+
+list=[]
+for i in range(1,11):
+  list.append(i)
+
+for i in range(3):
+  list.pop()
+
+print(list)
+
+list_1 =["f","k","d","w","z","f","g"]
+list = list+list_1
+
+for i in range(5):
+  list.pop()
+
+print(list)

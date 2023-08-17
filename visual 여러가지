@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>0817</title>
+</head>
+
+<body>
+    <div>
+        <h2>소제목</h2>
+        <p>
+            <strong>방과후</strong><em>노잼</em>
+
+        </p>
+    </div>
+
+    <!-- ul : 점 - 순서가 없는 -->
+    <!-- ol : 숫자 - 순서가 잇는 -->
+
+    <div>
+        <h2>오늘먹은간식</h2>
+        <ol>
+            <li><a href="https://naver.com" target="_blank" title="ㅋㅋㅋㅋㅋㅋ">초코파이</a></li>
+            <!-- dafault(기본값): _self -->
+            <li>쿠키</li>
+            <li>콜라</li>
+        </ol>
+    </div>
+
+    <a href="https://naver.com">
+
+        <img src="다운로드.jfif" alt="zzzzzz" title="섹시해용" style="width: 1000px;">
+    </a>
+    <!-- alt : 대체택스트 -->
+
+    <form action="https://www.youtube.com/">
+        아이디 : <input type="text" name="id">
+        <br>
+        비밀번호 : <input type="password" name="pw">
+        <br>
+        <input type="submit" value="로그인">
+    </form>
+</body>
+
+</html>

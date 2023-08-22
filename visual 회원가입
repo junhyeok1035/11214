@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 페이지</title>
+</head>
+
+<body>
+    <h2>회원가입 페이지</h2>
+
+    <form action="join.html">
+
+        <div>아이디</div>
+        <div><input type="text" name="id"></div>
+
+        <div>비밀번호 </div>
+        <div><input type="password" name="pw"></div>
+
+        <div>성별</div>
+        <div>
+            남자<input type="checkbox" name="gender" vales="남">
+            여자<input type="checkbox" name="gender" vales="여">
+            중성<input type="checkbox" name="gender" vales="중성">
+        </div>
+
+        <div>학년</div>
+        <div>
+            <select name="grade">
+                <option value="1학년">1학년</option>
+                <option value="2학년">2학년</option>
+                <option value="3학년">3학년</option>
+            </select>
+        </div>
+
+        <input type="submit" value="회원가입">
+    </form>
+
+</body>
+
+</html>

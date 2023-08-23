@@ -1,0 +1,33 @@
+import random
+
+
+Num = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K','A']
+Card = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
+Deck = [{'랭크': rank, '슈트': suit} for suit in Card for rank in Num]
+
+random.shuffle(Deck)
+
+player_card1 = [Deck.pop()]
+banker_card1 = [Deck.pop()]
+player_card2 = [Deck.pop()]
+banker_card2 = [Deck.pop()]
+
+print("첫 번쨰 플레이어 카드:", player_card1)
+print("첫 번쨰 뱅커 카드:", banker_card1)   
+print("두 번쨰 플레이어 카드:", player_card2)
+print("두 번쨰 뱅커 카드:", banker_card2)     
+
+playerscore = 0
+bankerscore = 0
+
+if player_card1[0]['랭크'] == "K"or"Q"or"J":
+  playerscore += 10
+
+elif player_card1[0]['랭크'] == "A":
+  playerscore += 1
+
+else :
+  print()
+
+print(playerscore)
+

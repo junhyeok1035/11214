@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>표(table)</h2>
+    <table border="1">
+        <tr>
+            <th style="width: 100px;">이름</th>
+            <td>박준혁</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td>경기광주태전동</td>
+        </tr>
+        <tr>
+            <th>전화번호</th>
+            <td>01064270932</td>
+        </tr>
+    </table>
+</body>
+
+</html>

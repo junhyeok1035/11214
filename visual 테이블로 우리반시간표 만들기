@@ -10,12 +10,12 @@
     <h2>1학년 12반 시간표</h2>
     <table border="1">
         <tr>
-            <td>교시</td>
-            <td>월</td>
-            <td>화</td>
-            <td>수</td>
-            <td>목</td>
-            <td>금</td>
+            <td style="width: 100px;">교시</td>
+            <td style="width: 100px;">월</td>
+            <td style="width: 100px;">화</td>
+            <td style="width: 100px;">수</td>
+            <td style="width: 100px;">목</td>
+            <td style="width: 100px;">금</td>
             <div></div>
         </tr>
         <tr>

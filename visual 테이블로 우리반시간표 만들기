@@ -9,7 +9,7 @@
 <body>
     <h2>1학년 12반 시간표</h2>
     <table border="1" style="text-align: center;">
-        <tr>
+        <tr style="background-color: pink;">
             <td style="width: 100px;">교시</td>
             <td style="width: 100px;">월</td>
             <td style="width: 100px;">화</td>
@@ -19,25 +19,25 @@
             <div></div>
         </tr>
         <tr>
-            <td>1교시(9:00)</td>
+            <td style="background-color: pink;">1교시(9:00)</td>
             <td>영어</td>
-            <td>데베프</td>
-            <td>정보</td>
+            <td rowspan="2">데베프</td>
+            <td rowspan="2">정보</td>
             <td>응프화</td>
             <td>수학</td>
             <div></div>
         </tr>
         <tr>
-            <td>2교시(10:00)</td>
+            <td style="background-color: pink;">2교시(10:00)</td>
             <td>수학</td>
-            <td>데베프</td>
-            <td>정보</td>
+            <!-- <td>데베프</td> -->
+            <!-- <td>정보</td> -->
             <td>응프화</td>
             <td>일본</td>
             <div></div>
         </tr>
         <tr>
-            <td>3교시(11:00)</td>
+            <td style="background-color: pink;">3교시(11:00)</td>
             <td>국어</td>
             <td>영어</td>
             <td>일본</td>
@@ -46,7 +46,7 @@
             <div></div>
         </tr>
         <tr>
-            <td>4교시(12:00)</td>
+            <td style="background-color: pink;">4교시(12:00)</td>
             <td>체육</td>
             <td>수학</td>
             <td>국어</td>
@@ -55,30 +55,30 @@
             <div></div>
         </tr>
         <tr>
-            <td>5교시(13:50)</td>
+            <td style="background-color: pink;">5교시(13:50)</td>
             <td>데베프</td>
             <td>체육</td>
             <td>수학</td>
             <td>정보</td>
-            <td>창체</td>
+            <td rowspan="3">창체</td>
             <div></div>
         </tr>
         <tr>
-            <td>6교시(14:50)</td>
+            <td style="background-color: pink;">6교시(14:50)</td>
             <td>데베프</td>
-            <td></td>
+            <td>진로</td>
             <td>통과</td>
             <td>통과</td>
-            <td>창체</td>
+            <!-- <td>창체</td> -->
             <div></div>
         </tr>
         <tr>
-            <td>7교시(15:50)</td>
+            <td style="background-color: pink;">7교시(15:50)</td>
             <td>응프화</td>
-            <td></td>
-            <td></td>
+            <td colspan="2"></td>
+            <!-- <td></td> -->
             <td>국어</td>
-            <td>창체</td>
+            <!-- <td>창체</td> -->
             <div></div>
         </tr>
     </table>

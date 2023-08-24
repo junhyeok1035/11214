@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>1학년 12반 시간표</h2>
+    <table border="1">
+        <tr>
+            <td>교시</td>
+            <td>월</td>
+            <td>화</td>
+            <td>수</td>
+            <td>목</td>
+            <td>금</td>
+            <div></div>
+        </tr>
+        <tr>
+            <td>1교시(9:00)</td>
+            <td>영어</td>
+            <td>데베프</td>
+            <td>정보</td>
+            <td>응프화</td>
+            <td>수학</td>
+            <div></div>
+        </tr>
+        <tr>
+            <td>2교시(10:00)</td>
+            <td>수학</td>
+            <td>데베프</td>
+            <td>정보</td>
+            <td>응프화</td>
+            <td>일본</td>
+            <div></div>
+        </tr>
+        <tr>
+            <td>3교시(11:00)</td>
+            <td>국어</td>
+            <td>영어</td>
+            <td>일본</td>
+            <td>영어</td>
+            <td>영어</td>
+            <div></div>
+        </tr>
+        <tr>
+            <td>4교시(12:00)</td>
+            <td>체육</td>
+            <td>수학</td>
+            <td>국어</td>
+            <td>음악</td>
+            <td>국어</td>
+            <div></div>
+        </tr>
+        <tr>
+            <td>5교시(13:50)</td>
+            <td>데베프</td>
+            <td>체육</td>
+            <td>수학</td>
+            <td>정보</td>
+            <td>창체</td>
+            <div></div>
+        </tr>
+        <tr>
+            <td>6교시(14:50)</td>
+            <td>데베프</td>
+            <td></td>
+            <td>통과</td>
+            <td>통과</td>
+            <td>창체</td>
+            <div></div>
+        </tr>
+        <tr>
+            <td>7교시(15:50)</td>
+            <td>응프화</td>
+            <td></td>
+            <td></td>
+            <td>국어</td>
+            <td>창체</td>
+            <div></div>
+        </tr>
+    </table>
+</body>
+
+
+</html>

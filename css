@@ -1,0 +1,53 @@
+<!-- 느낌표 엔터 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>0816 방과후 세번째 시간</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- 주석(commet) : 컨트롤 + / -->
+
+<body>
+    <h1 style="font-family: '함초롬바탕';">Lorem Ipsum(로렘 입숨)</h1>
+
+    <div id="jun">
+        <h2 class="아무거나">What is Lorem Ipsum?</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of<br>
+            the printing and typesetting industry.<br>
+            Lorem Ipsum has been the industry's<br>
+            specimen book.
+        </p>
+    </div>
+
+    <div>
+        <h2 style="font-family: '함초롬바탕';">Why do we use it?</h2>
+        <p>
+            It is a long established fact that a reader will be<br>
+            distracted by the readable content of a page when<br>
+            looking at its layout. The point of using Lorem Ipsum<br>
+            making it look like readable English.
+        </p>
+    </div>
+
+</body>
+
+</html>
+
+h1 {
+    font-family: '함초롬바탕';
+}
+
+p {
+    font-family: 'georgia';
+}
+
+.아무거나{
+    color: red;
+}
+#jun{
+    color: blue;
+}

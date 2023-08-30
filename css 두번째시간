@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>css 두번째 시간</title>
+</head>
+
+<body>
+    <div>
+        <h2>ul-li 태그</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>이미지 태그</h2>
+        <img src="mi.jpg" alt="미하일">
+    </div>
+    <div>
+        <h2>문단 태그</h2>
+        <h3>Lorem Ipsum</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sequi illum dignissimos placeat nesciunt,
+            molestiae aspernatur eligendi enim animi earum excepturi molestias numquam pariatur sint dicta accusamus
+            alias. Corrupti, quasi!
+        </p>
+
+    </div>
+</body>
+
+</html>

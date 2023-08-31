@@ -1,0 +1,211 @@
+import random
+
+
+Num = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K','A']
+Card = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
+Deck = [{'랭크': rank, '슈트': suit} for suit in Card for rank in Num]
+
+random.shuffle(Deck)
+
+player_card1 = [Deck.pop()]
+banker_card1 = [Deck.pop()]
+player_card2 = [Deck.pop()]
+banker_card2 = [Deck.pop()]
+
+print("첫 번쨰 플레이어 카드:", player_card1)
+print("첫 번쨰 뱅커 카드:", banker_card1)
+print("두 번쨰 플레이어 카드:", player_card2)
+print("두 번쨰 뱅커 카드:", banker_card2)
+
+playerscore = 0
+bankerscore = 0
+
+#플레이어 첫번쨰 카드 점수
+if player_card1[0]['랭크'] == 'K':
+  playerscore += 10
+elif player_card1[0]['랭크'] == 'Q':
+  playerscore += 10
+elif player_card1[0]['랭크'] == 'J':
+  playerscore += 10
+elif player_card1[0]['랭크'] == '10':
+  playerscore += 10
+elif player_card1[0]['랭크'] == '9':
+  playerscore += 9
+elif player_card1[0]['랭크'] == '8':
+  playerscore += 8
+elif player_card1[0]['랭크'] == '7':
+  playerscore += 7
+elif player_card1[0]['랭크'] == '6':
+  playerscore += 6
+elif player_card1[0]['랭크'] == '5':
+  playerscore += 5
+elif player_card1[0]['랭크'] == '4':
+  playerscore += 4
+elif player_card1[0]['랭크'] == '3':
+  playerscore += 3
+elif player_card1[0]['랭크'] == '2':
+  playerscore += 2
+elif player_card1[0]['랭크'] == 'A':
+  playerscore += 1
+
+#뱅커 첫번째 카드 점수
+if banker_card1[0]['랭크'] == 'K':
+    bankerscore += 10
+elif banker_card1[0]['랭크'] == 'Q':
+    bankerscore += 10
+elif banker_card1[0]['랭크'] == 'J':
+    bankerscore += 10
+elif banker_card1[0]['랭크'] == '10':
+    bankerscore += 10
+elif banker_card1[0]['랭크'] == '9':
+    bankerscore += 9
+elif banker_card1[0]['랭크'] == '8':
+    bankerscore += 8
+elif banker_card1[0]['랭크'] == '7':
+    bankerscore += 7
+elif banker_card1[0]['랭크'] == '6':
+    bankerscore += 6
+elif banker_card1[0]['랭크'] == '5':
+    bankerscore += 5
+elif banker_card1[0]['랭크'] == '4':
+    bankerscore += 4
+elif banker_card1[0]['랭크'] == '3':
+    bankerscore += 3
+elif banker_card1[0]['랭크'] == '2':
+    bankerscore += 2
+elif banker_card1[0]['랭크'] == 'A':
+    bankerscore += 1
+
+#플레이어 두번쨰 카드 점수
+if player_card2[0]['랭크'] == 'K':
+  playerscore += 10
+elif player_card2[0]['랭크'] == 'Q':
+  playerscore += 10
+elif player_card2[0]['랭크'] == 'J':
+  playerscore += 10
+elif player_card2[0]['랭크'] == '10':
+  playerscore += 10
+elif player_card2[0]['랭크'] == '9':
+  playerscore += 9
+elif player_card2[0]['랭크'] == '8':
+  playerscore += 8
+elif player_card2[0]['랭크'] == '7':
+  playerscore += 7
+elif player_card2[0]['랭크'] == '6':
+  playerscore += 6
+elif player_card2[0]['랭크'] == '5':
+  playerscore += 5
+elif player_card2[0]['랭크'] == '4':
+  playerscore += 4
+elif player_card2[0]['랭크'] == '3':
+  playerscore += 3
+elif player_card2[0]['랭크'] == '2':
+  playerscore += 2
+elif player_card2[0]['랭크'] == 'A':
+  playerscore += 1
+
+#뱅커 두번쨰 카드 점수
+if banker_card2[0]['랭크'] == 'K':
+    bankerscore += 10
+elif banker_card2[0]['랭크'] == 'Q':
+    bankerscore += 10
+elif banker_card2[0]['랭크'] == 'J':
+    bankerscore += 10
+elif banker_card2[0]['랭크'] == '10':
+    bankerscore += 10
+elif banker_card2[0]['랭크'] == '9':
+    bankerscore += 9
+elif banker_card2[0]['랭크'] == '8':
+    bankerscore += 8
+elif banker_card2[0]['랭크'] == '7':
+    bankerscore += 7
+elif banker_card2[0]['랭크'] == '6':
+    bankerscore += 6
+elif banker_card2[0]['랭크'] == '5':
+    bankerscore += 5
+elif banker_card2[0]['랭크'] == '4':
+    bankerscore += 4
+elif banker_card2[0]['랭크'] == '3':
+    bankerscore += 3
+elif banker_card2[0]['랭크'] == '2':
+    bankerscore += 2
+elif banker_card2[0]['랭크'] == 'A':
+    bankerscore += 1
+
+if playerscore % 10 >= 8 and bankerscore % 10 >= 8: #네츄럴
+  if playerscore == bankerscore:
+    print("무승부")
+  elif playerscore > bankerscore:
+    print("플레이어 네츄럴 승리")
+  elif bankerscore > playerscore:
+    print("뱅커 네츄럴 승리")
+elif playerscore % 10 >= 8:
+  print("플레이어 네츄럴 승리")
+elif bankerscore % 10 >= 8:
+  print("뱅커 네츄럴 승리")
+
+elif playerscore % 10 <=5: #플레이어가 5이하일때 추가카드
+    player_card3 = [Deck.pop()]
+    print("플레이어 추가카드:", player_card3)
+    if player_card3[0]['랭크'] == 'K':
+      playerscore += 10
+    elif player_card3[0]['랭크'] == 'Q':
+      playerscore += 10
+    elif player_card3[0]['랭크'] == 'J':
+      playerscore += 10
+    elif player_card3[0]['랭크'] == '10':
+      playerscore += 10
+    elif player_card3[0]['랭크'] == '9':
+      playerscore += 9
+    elif player_card3[0]['랭크'] == '8':
+      playerscore += 8
+    elif player_card3[0]['랭크'] == '7':
+      playerscore += 7
+    elif player_card3[0]['랭크'] == '6':
+      playerscore += 6
+    elif player_card3[0]['랭크'] == '5':
+      playerscore += 5
+    elif player_card3[0]['랭크'] == '4':
+      playerscore += 4
+    elif player_card3[0]['랭크'] == '3':
+      playerscore += 3
+    elif player_card3[0]['랭크'] == '2':
+      playerscore += 2
+    elif player_card3[0]['랭크'] == 'A':
+      playerscore += 1
+
+    if bankerscore % 10 <=5: #뱅커 5 이하일떄 추가카드
+      banker_card3 = [Deck.pop()]
+      print("뱅커 추가카드:", banker_card3)
+      if banker_card3[0]['랭크'] == 'K':
+        bankerscore += 10
+      elif banker_card3[0]['랭크'] == 'Q':
+        bankerscore += 10
+      elif banker_card3[0]['랭크'] == 'J':
+        bankerscore += 10
+      elif banker_card3[0]['랭크'] == '10':
+        bankerscore += 10
+      elif banker_card3[0]['랭크'] == '9':
+        bankerscore += 9
+      elif banker_card3[0]['랭크'] == '8':
+        bankerscore += 8
+      elif banker_card3[0]['랭크'] == '7':
+        bankerscore += 7
+      elif banker_card3[0]['랭크'] == '6':
+        bankerscore += 6
+      elif banker_card3[0]['랭크'] == '5':
+        bankerscore += 5
+      elif banker_card3[0]['랭크'] == '4':
+        bankerscore += 4
+      elif banker_card3[0]['랭크'] == '3':
+        bankerscore += 3
+      elif banker_card3[0]['랭크'] == '2':
+        bankerscore += 2
+      elif banker_card3[0]['랭크'] == 'A':
+        bankerscore += 1
+
+elif playerscore > bankerscore:
+  print("플레이어 승리")
+elif bankerscore > playerscore:
+  print("뱅커 승리")
+

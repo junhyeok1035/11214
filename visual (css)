@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="fontFamily">
+        잘생긴 <span>junhyeok</span>
+    </div>
+
+    <div class="textAlignLeft">왼쪽정렬</div>
+    <div class="textAlignCenter">가운데정렬</div>
+    <div class="textAlignRight">오른쪽정렬</div>
+</body>
+
+</html>
+
+.fontFamily {
+    font-family: "Georgia", "함초롬바탕";
+    color: hotpink;
+}
+.fontFamily span {
+    color: blue;
+    font-size: 2em;
+    font-style: italic;
+}
+.textAlignLeft {
+    text-align: left;
+}
+.textAlignCenter {
+    text-align: center;
+}
+.textAlignRight {
+    text-align: right;
+}

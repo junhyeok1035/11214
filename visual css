@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <span>오늘은 목요일</span>
+    <div class="box1">
+        <div class="a"></div>
+        <div class="b">aa</div>
+        <div class="c"></div>
+    </div>
+</body>
+
+</html>

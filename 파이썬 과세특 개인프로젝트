@@ -1,0 +1,10 @@
+import random
+
+소문자 = "abcdefghijklmnopqrstuvwxyz"
+대문자 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+숫자 = "0123456789"
+특수문자 = "[]{}#*;._-"
+더한거 = 소문자 + 대문자 + 숫자 + 특수문자
+길이 = 10
+비번 = "".join(random.sample(더한거, 길이))
+print("랜덤으로 선택된 비밀번호는 : ",비번)

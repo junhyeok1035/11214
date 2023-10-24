@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = true;
+        var b = false;
+        var c = 10 > 5;
+        var d = Boolean(null);
+
+        document.write(a, "<dr>");
+        document.write(b, "<dr>");
+        document.write(c, "<dr>");
+        document.write(d, "<dr>");
+    </script>
+
+</body>
+
+</html>

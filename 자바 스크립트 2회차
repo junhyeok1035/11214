@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var 공지;
+        var 몸무게 = prompt("몸무게를 입력하세요");
+        var 키 = prompt("키를 입력하세요");
+        var bmi = 몸무게 / (키 * 키);
+        if (bmi <= 18.5) {
+            공지 = "<h1>당신은 저체중입니다 </h1>"
+        } else if (bmi <= 24.9) {
+            공지 = "<h1>당신은 건강합니다 </h1>"
+        } else if (bmi <= 29.9) {
+            공지 = "<h1>당신은 과체중입니다 </h1>"
+        } else if (bmi <= 30) {
+            공지 = "<h1>당신은 비만입니다 </h1>"
+        }
+        document.write("몸무게:", 몸무게, "kg<br>");
+        document.write("키:", 키, "m<br>");
+        document.write("bmi:", bmi);
+        document.write(공지)
+    </script>
+</body>
+
+</html>

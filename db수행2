@@ -1,0 +1,5 @@
+SQL> select stu_id 학번,stu_name 학생이름,
+  2  decode(gender,'남','남학생','여학생') 성별,
+  3  substr(phone,10,4) 연락처, club 동아리, t_name 동아리선생님
+  4  from student_tbl_01 s, teacher_tbl_01 t
+  5  where s.t_id=t.t_id;

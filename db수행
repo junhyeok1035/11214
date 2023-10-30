@@ -1,0 +1,5 @@
+SQL> create table student_tbl_01 (
+  2  t_id number(3) primary key,
+  3  t_name varchar2(20),
+  4  subject varchar2(50),
+  5  club varchar2(30));

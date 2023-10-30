@@ -3,3 +3,15 @@ SQL> select stu_id 학번,stu_name 학생이름,
   3  substr(phone,10,4) 연락처, club 동아리, t_name 동아리선생님
   4  from student_tbl_01 s, teacher_tbl_01 t
   5  where s.t_id=t.t_id;
+
+
+or
+
+
+
+select stu_id 학번,stu_name 학생이름,
+case when gender='남' then '남학생'
+	else '여학생' end 성별,
+substr(phone,10,4) 연락처, club 동아리, t_name 동아리선생님
+from student_tbl_01 s, teacher_tbl_01 t
+where s.t_id=t.t_id;

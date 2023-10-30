@@ -1,5 +1,200 @@
+Microsoft Windows [Version 10.0.19045.3324]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\user>sqlplus
+
+SQL*Plus: Release 11.2.0.2.0 Production on 월 10월 30 15:00:53 2023
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+Enter user-name: system
+Enter password:
+ERROR:
+ORA-28002: the password will expire within 7 days
+
+
+
+Connected to:
+Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+
+SQL> create table student_tbl_01 (
+  2  stu_id number(5) primary key,
+  3  stu_name varchar2(20),
+  4  gender varchar2(3),
+  5  phone varchar2(20),
+  6  t_id number(3));
+
+Table created.
+
 SQL> create table student_tbl_01 (
   2  t_id number(3) primary key,
   3  t_name varchar2(20),
   4  subject varchar2(50),
   5  club varchar2(30));
+create table student_tbl_01 (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+SQL> create table teacher_tbl_01 (
+  2  t_id number(3) primary key,
+  3  t_name varchar2(20),
+  4  subject varchar2(50),
+  5  club varchar2(30));
+
+Table created.
+
+SQL> desc student_tbl_01
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STU_ID                                    NOT NULL NUMBER(5)
+ STU_NAME                                           VARCHAR2(20)
+ GENDER                                             VARCHAR2(3)
+ PHONE                                              VARCHAR2(20)
+ T_ID                                               NUMBER(3)
+
+SQL> desc teacher_tbl_01
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ T_ID                                      NOT NULL NUMBER(3)
+ T_NAME                                             VARCHAR2(20)
+ SUBJECT                                            VARCHAR2(50)
+ CLUB                                               VARCHAR2(30)
+
+SQL> create sequence stu_seq
+  2  start with 10101
+  3  increment by 1
+  4  maxvalue 10130
+  5  minvalue 10101
+  6  nocycle;
+
+Sequence created.
+
+SQL>
+SQL> insert into student_tbl_01 values
+  2  (stu_seq.nextval, '권창욱','남','010-7777-2222',3);
+
+1 row created.
+
+SQL>
+SQL> insert into student_tbl_01 values
+  2  (stu_seq.nextval, '염주희','여','010-6666-3333',2);
+
+1 row created.
+
+SQL> insert into student_tbl_01 values
+  2  (stu_seq.nextval, '정아영','여','010-5555-4444',1);
+
+1 row created.
+
+SQL> insert into student_tbl_01 values
+  2  (stu_seq.nextval, '김민준','남','010-4444-5555',1);
+
+1 row created.
+
+SQL> insert into student_tbl_01 values
+  2  (stu_seq.nextval, '김현빈','남','010-3333-6666',2);
+
+1 row created.
+
+SQL> insert into student_tbl_01 values
+  2  (stu_seq.nextval, '김현수','남','010-2222-7777',3);
+
+1 row created.
+
+SQL> select * from student_tbl_01;
+
+    STU_ID STU_NAME                                 GENDER
+---------- ---------------------------------------- ------
+PHONE                                          T_ID
+---------------------------------------- ----------
+     10101 권창욱                                   남
+010-7777-2222                                     3
+
+     10102 염주희                                   여
+010-6666-3333                                     2
+
+     10103 정아영                                   여
+010-5555-4444                                     1
+
+
+    STU_ID STU_NAME                                 GENDER
+---------- ---------------------------------------- ------
+PHONE                                          T_ID
+---------------------------------------- ----------
+     10104 김민준                                   남
+010-4444-5555                                     1
+
+     10105 김현빈                                   남
+010-3333-6666                                     2
+
+     10106 김현수                                   남
+010-2222-7777                                     3
+
+
+6 rows selected.
+
+SQL> insert into teacher_tbl_01 values('1','오현아','알고리즘','자바 프로그래밍');
+
+1 row created.
+
+SQL> insert into teacher_tbl_01 values('2','최승남','자료구조','응용 프로그래밍');
+
+1 row created.
+
+SQL> insert into teacher_tbl_01 values('3','최지선','논리회로','로봇 프로그래밍');
+
+1 row created.
+
+SQL> select * from teacher_tbl_01;
+
+      T_ID T_NAME
+---------- ----------------------------------------
+SUBJECT
+--------------------------------------------------------------------------------
+CLUB
+------------------------------------------------------------
+         1 오현아
+알고리즘
+자바 프로그래밍
+
+         2 최승남
+자료구조
+응용 프로그래밍
+
+      T_ID T_NAME
+---------- ----------------------------------------
+SUBJECT
+--------------------------------------------------------------------------------
+CLUB
+------------------------------------------------------------
+
+         3 최지선
+논리회로
+로봇 프로그래밍
+
+
+SQL> set linesize 300;
+SQL> select * from teacher_tbl_01;
+
+      T_ID T_NAME                                   SUBJECT                                                                                              CLUB
+---------- ---------------------------------------- ---------------------------------------------------------------------------------------------------- ------------------------------------------------------------
+         1 오현아                                   알고리즘                                                                                             자바 프로그래밍
+         2 최승남                                   자료구조                                                                                             응용 프로그래밍
+         3 최지선                                   논리회로                                                                                             로봇 프로그래밍
+
+SQL> select * from student_tbl_01;
+
+    STU_ID STU_NAME                                 GENDER PHONE                                          T_ID
+---------- ---------------------------------------- ------ ---------------------------------------- ----------
+     10101 권창욱                                   남     010-7777-2222                                     3
+     10102 염주희                                   여     010-6666-3333                                     2
+     10103 정아영                                   여     010-5555-4444                                     1
+     10104 김민준                                   남     010-4444-5555                                     1
+     10105 김현빈                                   남     010-3333-6666                                     2
+     10106 김현수                                   남     010-2222-7777                                     3
+
+6 rows selected.
+
+SQL>

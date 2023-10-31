@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>1030</title>
+</head>
+<body>
+    <script>
+        var 이름 = prompt("이름이 뭐에요?", "홍길동");
+
+        if(이름) {
+            document.write("<h2>"+이름+"님 안녕하세요?</h2>");
+        } else {
+            document.write("<h2>새로고침 후 이름을 다시 연락해주세요</h2>")
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+create sequence custno_seq
+start with 100001
+increment by 1
+maxvalue 100030
+minvalue 100001
+nocycle;
+
+insert into member_tbl_02 values
+(custno_seq.nextval,'정로사','010-1111-7777','제주도 제주시 감나무골','20191211','C','60');
+
+create table money_tbl_02 (
+custno number(6),
+saleno number(8),
+pcost number(8),
+amount number(4),
+price number(8),
+pcode varchar2(4),
+sdate date,
+primary key(custno, saleno));
+	
+
+insert into money_tbl_02 values(100004,20160010,3000,1,3000,'A007','20200106');
+
+delete 
+from money_tbl_02
+where custno = 100003;
+
+
+select m.custno 회원번호, custname 회원이름, 
+to_char(joindate, 'yyyy-mm-dd')가입날짜, 
+sum(price) 판매가격,
+substr(phone,10,4) 연락처,
+decode(grade,'A','VIP','B','일반','직원') 등급
+from member_tbl_02 m, money_tbl_02 n
+where m.custno=n.custno
+group by m.custno,custname,joindate,phone,grade
+order by sum(price) desc;

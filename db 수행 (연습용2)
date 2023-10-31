@@ -44,3 +44,10 @@ from member_tbl_02 m, money_tbl_02 n
 where m.custno=n.custno
 group by m.custno,custname,joindate,phone,grade
 order by sum(price) desc;
+
+
+
+
+drop table money_tbl_02;
+drop table member_tbl_02;
+drop sequence custno_seq;

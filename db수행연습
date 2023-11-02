@@ -1,0 +1,29 @@
+(emp_seq.nextval,'손오공','D','75000','010517-3487415','20');
+insert into emp_tbl_02 values
+(emp_seq.nextval,'김미녀','E','70000','020116-4154217','30');
+
+create table dept_tbl_02 (
+dept_id number(4) primary key,
+dept_name varchar2(20),
+floor number(2),
+location varchar2(10));
+
+insert into dept_tbl_02 values
+('10','인사','7','서울');
+insert into dept_tbl_02 values
+('20','경리','5','서울');
+insert into dept_tbl_02 values
+('30','영업','12','성남');
+insert into dept_tbl_02 values
+('40','기획','15','성남');
+
+set linesize 300;
+select * from emp_tbl_02;
+select * from dept_tbl_02;
+
+select emp_id 사원번호, emp_name 사원이름,
+decode(position,'P ','대표이사','H ','부장','D ','대리','사원') 직책,
+salary 급여,
+substr(rr_num,8,1) 성별코드, dept_name 부서이름, location 부서위치
+from emp_tbl_02 E, dept_tbl_02 D
+where E.dept_id = D.dept_id;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // 국영수DB 성적 평균내보자
+        var kor = 90;
+        var eng = 88;
+        var math = 99;
+        var DB = 100;
+
+        //document.write("국어(kor): " + kor + "<br>");
+        //document.write("영어(eng): " + kor + "<br>");
+        //document.write("수학(math): " + kor + "<br>");
+        //document.write("데이터베이스(DB): " + kor + "<br>");
+        //document.write("평균 : " + eng + math + DB / 4 + "점");
+        document.write(`국어(kor): ${kor}<br>`);
+        document.write(`영어(eng): ${eng}<br>`);
+        document.write(`수학(math): ${math}<br>`);
+        document.write(`데이터베이스(DB):${DB}<br>`);
+        document.write(`평균 : ${(eng+math+DB/4)}점`);
+
+        let exam = [99, 99, 88, 77];
+            //      [0] [1] [2] [3]
+        document.write(`국어(kor): ${exam[0]} <br>`);
+        document.write(`영어(eng): ${exam[1]} <br>`);
+        document.write(`수학(math): ${exam[2]} <br>`);
+        document.write(`데이터베이스(DB):${exam[3]} <br>`);
+        document.write(`평균 : ${(exam[0] + exam[1] + exam[2] +exam[3]) / exam.length}점`);
+
+
+        let exam = [99, 99, 88, 77];
+
+        for(let i=0; i<exam.length; i++) {
+            document.write(`${i} : ${exam[i]} <br>`);
+        }
+
+
+        
+
+    </script>
+</body>
+</html>

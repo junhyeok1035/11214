@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    /* 테두리를 아무것도 없게 해주고 시작 */
+}
+
+#main {
+    width: 1000px;
+    /*메인 div에 width 1000px 넣기 */
+}
+
+#header {
+    width: 1000px;
+    /*header div에 width 1000px 넣기 */
+}
+
+.menu {
+    text-align: center;
+    /* 메뉴 클레스에 있는 목록들을 가운데 정렬 */
+}
+
+.menu ul {
+    margin: auto;
+    display: inline-block;
+    /* 크기를 자동으로 맞춰주고 구역을 나눠주는거 */
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    padding: 15px;
+    /* 왼쪽에서 오른쪽으로 글씨를 정렬해주고 글씨를 나눠주는
+    글머리 기호를 없애준다 */
+}
+
+.menu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: green;
+    /* 텍스트는 기본값(꾸미지 않음), 텍스트 색은 녹색
+    텍스트를 감싸는 부분의 크기를 세로 15, 가로 25로 설정 */
+}
+
+a:hover {
+    background-color: #DBBABA;
+    color: black;
+    /* a:hover은 선택을 할 수 있게 만드는거고 마우스를 올렸을 때
+    글자는 검정, 배경은 연한 핑크로 설정한것 */
+}
+
+.info_title {
+    font-size: 15pt;
+    font-weight: bold;
+    background-color: #AEAAAA;
+    /* 박스 가로 */
+    width: 900px;
+    /* 박스 세로 */
+    height: 50px;
+    /* 박스 가로 위치  */
+    margin: 0 25px;
+    /* 글씨 위치(세로 가운데 정렬) */
+    line-height: 50px;
+}
+
+.info_title_detail {
+    width: 800px;
+    height: 50px;
+    margin: 0 25px;
+    background-color: #E4E3E3;
+    line-height: 50px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.info_contents {
+    padding: 30px;
+    font-size: 14pt;
+}
+
+.info_table {
+    border: black solid 1px;
+    border-collapse: collapse;
+}
+
+.info_table tr td {
+    border: black solid 1px;
+    padding: 10px 30px;
+}
+
+.info_table tr th {
+    border: black solid 1px;
+    padding: 10px 30px;
+}

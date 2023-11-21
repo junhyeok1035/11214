@@ -1,0 +1,38 @@
+button = 1
+
+if button == 1:
+  print("콜라")
+elif button == 2:
+  print("사이다")
+elif button == 3:
+  print("환타")
+else :
+  print("제공하지 않는 음료")
+
+
+리스트 = 값의 집합
+리스트의 구조
+리스트명 = [요소1,요소2,요소3,...]
+odd = [1,3,5,7,9]
+print(odd[0])
+1
+
+
+for문 - 반복문
+1. 기본 구조
+for ~를 위한
+
+for 변수 in 리스트(또는 튜플,문자열) :
+  수행문 1
+  수행문 2
+   . . .
+
+score = [85,55,45,27,99,100]
+
+num = 0
+for a in score :
+
+  if a >= 60 :
+    print("합격")
+  else :
+    print("불합격")

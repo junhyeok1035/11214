@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>11-21</title>
+</head>
+
+<body>
+    <h2>배열(array)</h2>
+    <script>
+        let ary = [100, 99, 98, 97];
+
+        document.write(`문학: ${ary[0]}<br>`);
+        document.write(`체육: ${ary[1]}<br>`);
+        document.write(`DB: ${ary[2]}<br>`);
+        document.write(`정보: ${ary[3]}<br>`);
+    </script>
+
+    <h2>객체 리터럴(Object Literal)</h2>
+    <script>
+        let ol = {
+            '문학': 100,
+            '체육': 99,
+            'DB': 98,
+            '정보': 97
+        }
+        // document.write(`문학: ${ol['문학']}<br>`);
+        // document.write(`체육: ${ol['체육']}<br>`);
+        // document.write(`DB: ${ol['DB']}<br>`);
+        // document.write(`정보: ${ol['정보']}<br>`);
+
+        for (let i in ol) {
+            document.write(`${i}: ${ol[i]}<br>`);
+        }
+
+    </script>
+
+    <h2>함수(function)</h2>
+
+    <script>
+        const f = function () {
+            alert("함수를 호출하셨네요?")
+        }
+        const f2 = function 함수(name) {
+            alert(name + "님, 함수를 호출하셨네요?")
+        }
+    </script>
+
+    <input type="button" value="호출" onclick="f2('주현')">
+
+    <h2>객체(object)</h2>
+
+    <script>
+        const person = {
+            name: "김주현",
+            age: 17,
+            isAdult: false,
+
+            f: function () {
+                alert(name + "입니다.")
+            }
+        }
+    </script>
+</body>
+
+</html>

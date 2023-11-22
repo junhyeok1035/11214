@@ -91,3 +91,8 @@ for i in range(len(score)):
   if i == 3:
     continue
   print(score[i])
+
+
+for i in range(1,5)
+  for i in range(0,20)
+80

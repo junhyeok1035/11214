@@ -22,6 +22,8 @@ elif score >= 60:
 else :
   print("F")
 
+
+
 button = 1
 if button == 1:
   print("콜라")
@@ -60,13 +62,19 @@ for a in score :
   else :
     print("불합격")
 
-score = [85,55,48,27,99,100]
 
-ecd="" : 엔터 없애줌score = [85,55,48,27,99,100]
+
+ecd="" : 엔터 없애줌
+
+
+
+score = [85,55,48,27,99,100]
 
 for a in range(len(score)) : #a를 0부터 5까지 날려가며 아래 수행문을 반복
   if a%2==1:
     print(score[a], end="")
+
+
 
 score = [85,55,48,27,99,100]
 
@@ -74,6 +82,8 @@ for a in score :
 
   if a%2 == 1:
     print(a)
+
+
 
 
 score = [85,55,48,27,99,100]

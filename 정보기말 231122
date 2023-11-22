@@ -1,5 +1,28 @@
-button = 1
+정보시험
 
+if 조건 A:
+  A 조건이 참일 때 실행할 문장
+
+elif 조건 B:
+  B조건이 참일 때 실행할 문장
+
+else:
+  모든 조건이 거짓일 경우 수행할 문장
+
+score = 75
+
+if score >= 90:   #if에서 걸리면 elif로 안넘어감 
+  print("A")
+elif score > 80:
+  print("B")
+elif score >= 70:
+  print("C")
+elif score >= 60:
+  print("D")
+else :
+  print("F")
+
+button = 1
 if button == 1:
   print("콜라")
 elif button == 2:

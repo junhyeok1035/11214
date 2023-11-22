@@ -39,6 +39,7 @@ for a in score :
 
 score = [85,55,48,27,99,100]
 
+ecd="" : 엔터 없애줌score = [85,55,48,27,99,100]
 
 for a in range(len(score)) : #a를 0부터 5까지 날려가며 아래 수행문을 반복
   if a%2==1:

@@ -50,3 +50,10 @@ for a in score :
 
   if a%2 == 1:
     print(a)
+
+
+score = [85,55,48,27,99,100]
+for i in range(len(score)):
+  if i == 3:
+    continue
+  print(score[i])

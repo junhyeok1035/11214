@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>구구단</title>
+</head>
+<body>
+    <script>
+        let dan = prompt("몇단 출력해줄까?");
+        for(let i=0; i<=dan; i++){
+            document.write(`${dan} * ${i} = S{dan*i} <br>`)
+        }
+    </script>
+    
+</body>
+</html>

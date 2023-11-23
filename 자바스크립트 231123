@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: '함초롱바탕';
+            background-color: #b0cbb7;
+            color: black;
+            text-align: center;
+        }
+
+        button {
+            padding: 8px 32px;
+            font-size: 16px;
+            font-family: '함초롱바탕';
+            font-weight: bold;
+            border: 2px solid black;
+            background-color: transparentk;
+            border-radius: 10px;
+            color: black;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #dark {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="dark" onclick="dark()">다크모드</button>
+    <img src="https://image.istarbucks.co.kr/common/img/main/rewards-logo.png" 스타벅스 로고">
+    <h1>스타벅스만의 특별한 혜택, 스타벅스 리워드</h1>
+    <p>
+        스타벅스 회원이세요?
+        로그인을 통해 나만의 리워드를 확인해보세요.
+        스타벅스 회원이 아니세요?
+        가입을 통해 리워드 혜택을 즐기세요.
+    </p>
+    <button>회원가입</button>
+    <button>로그인</button>
+
+    <script>
+        function dark() {
+            let btn = document.getElementsByTagName('button');
+            if (btn[0].innerHTML == '다크모드') {
+                document.body.style.backgroundColor = '#102517';
+                document.body.style.color = 'white';
+
+                for (let i = 0; i < btn.length; i++) {
+                    btn[i].style.color = 'white';
+                }
+                btn[0].innerHTML = '화이트 보드'
+            }
+            else {
+                document.body.style.backgroundColor = '#b0cbb7';
+                document.body.style.color = 'black';
+
+                for (let i = 0; i < btn.length; i++) {
+                    btn[i].style.color = 'black';
+                    btn[1].style.border = '2px solid black';
+                }
+                btn[0].innerHTML = '다크모드'
+            }
+
+        }
+    </script>
+</body>
+
+</html>

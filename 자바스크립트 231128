@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <span>아이디</span>
+            <input type="text" name="id">
+
+        </div>
+        <div>
+            <span>비번</span>
+            <input type="password" name="pw">
+            <input type="button" value="중복확인" onclick="same()">
+        </div>
+        <div>
+            <span>이름</span>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <span>성별</span>
+            <input type="radio" name="gender" value="male">남자
+            <input type="radio" name="gender" value="female">여자
+            <input type="radio" name="gender" value="other">기타
+        </div>
+        <div>
+            <span>관심사</span>
+            <select name="interest">
+                <option value="">-----관심사없음-----</option>
+                <option value="game">게임</option>
+                <option value="sports">운동</option>
+                <option value="book">책읽기</option>
+                <option value="song">노래</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="가입하기">
+            <input type="reset" value="초기화">
+        </div>
+    </form>
+</body>
+
+</html>

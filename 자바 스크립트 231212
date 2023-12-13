@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>수목원</title>
+<style>
+ul, li { list-style: none; }
+a {
+text-decoration: none;
+color: #000000;
+}
+#header {
+width: 750px;
+}
+#menu li {
+float: left;
+margin-left: 5px;
+margin-bottom: 10px;
+}
+#main {
+width: 750px;
+clear: both;
+}
+#main h1 {
+border: 1px solid #000000;
+background-color: skyblue;
+}
+#main table, #main table td {
+border: 1px solid #000000;
+border-collapse: collapse;
+}
+#main table {
+margin-left: 20px;
+}
+#main table td {
+padding: 5px 30px;
+text-align: center;
+}
+#traffic li {
+list-style: url("images/bullet_star.png");
+}
+#main p {
+width: 710px;
+border: 1px solid #000000;
+margin: 20px;
+padding: 10px;
+}
+</style>
+</head>
+<body>
+<header id="header">
+<div>
+<img alt="main" src="images/main_image.jpg">
+</div>
+<ul id="menu">
